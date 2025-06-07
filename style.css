@@ -1,58 +1,58 @@
+/*--- 공통 레이아웃 ---*/
 body {
-  margin: 0;
   font-family: 'Noto Sans KR', sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  line-height: 1.6;
   background: #fafafa;
   color: #333;
 }
-header {
-  background: #2980b9;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
+
+h1 {
+  font-size: 2.2em;
+  margin-bottom: 0.3em;
 }
-header h1 {
-  margin: 0;
-  font-size: 2em;
+
+h2 {
+  font-size: 1.4em;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 0.2em;
 }
-header p {
-  margin: 5px 0 0;
-}
-nav {
-  background: #fff;
-  border-bottom: 1px solid #ddd;
-}
-nav ul {
-  display: flex;
-  gap: 20px;
-  padding: 10px 20px;
-  margin: 0;
-  list-style: none;
-}
-nav a {
-  color: #2980b9;
-  text-decoration: none;
-  font-weight: 500;
-}
-nav a:hover {
-  text-decoration: underline;
-}
-main {
-  padding: 20px;
-}
-main h2 {
-  margin-top: 0;
-}
-main ul {
+
+/*--- 내비게이션(general nav) ---*/
+.main-nav {
   list-style: none;
   padding: 0;
+  margin-bottom: 1.2em;
 }
-main li {
-  margin: 0.5em 0;
+.main-nav li {
+  margin: 0.4em 0;
 }
-main a {
-  color: #2980b9;
+.main-nav a {
+  color: #0070f3;
+  font-weight: bold;
   text-decoration: none;
 }
-main a:hover {
+.main-nav a:hover {
+  text-decoration: underline;
+}
+
+/*--- 섹션별 리스트 ---*/
+.section-list {
+  list-style: disc inside;
+  padding-left: 0;
+  margin: 0;
+}
+.section-list li {
+  margin: 0.3em 0;
+}
+.section-list a {
+  color: #0070f3;
+  text-decoration: none;
+}
+.section-list a:hover {
   text-decoration: underline;
 }
